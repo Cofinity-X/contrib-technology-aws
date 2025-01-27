@@ -42,9 +42,15 @@ include(":extensions:common:vault:vault-aws")
 include(":extensions:common:validator:validator-data-address-s3")
 
 include(":extensions:control-plane:provision:provision-aws-s3")
+include(":extensions:control-plane:provision:provision-aws-s3-copy")
 
 include(":extensions:data-plane:data-plane-aws-s3")
+include(":extensions:data-plane:data-plane-aws-s3-copy")
+include(":extensions:data-plane:data-plane-transfer-service-selection")
 
 include(":spi:common:aws-spi")
+
+include(":system-tests:e2e-transfer-test:runner")
+include(":system-tests:e2e-transfer-test:runtime")
 
 include(":version-catalog")
